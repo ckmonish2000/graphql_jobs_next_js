@@ -7,6 +7,9 @@
     "dev": "next"
   },
   "dependencies": {
+    "@mantine/core": "^4.1.1",
+    "@mantine/hooks": "^4.1.1",
+    "@mantine/next": "^4.1.1",
     "@types/next": "^9.0.0",
     "@types/react": "^17.0.43",
     "@zeit/next-sass": "^1.0.1",

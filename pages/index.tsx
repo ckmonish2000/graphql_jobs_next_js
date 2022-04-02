@@ -1,7 +1,15 @@
-import styles from "../styles/login.module.scss"
+import React from "react"
+import styles from "@styles/login.module.scss"
+import Layouts from "@layouts/layouts"
 
 export default function index() {
   return (
-    <div className={styles.names}>indexsss</div>
+    <Layouts type="login">
+    <React.Fragment>
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      </React.Fragment>
+    </Layouts>
   )
 }
