@@ -1,7 +1,5 @@
 import styles from "styles/layouts.module.scss"
 import {ReactChild} from "react"
-import Logo from "@assets/Logo.png"
-
  
 interface prop{
   type: string,
@@ -19,10 +17,6 @@ export default function Layouts(props:prop) {
         box-sizing:border-box;
       }
     `}</style>
-      
-      <div style={{overflow: 'hidden'}}>
-        <img src={Logo.src} className={styles.Logo}/>
-      </div>
 
       {/* children */}
       {props?.children}
