@@ -10,7 +10,7 @@ interface propType{
 
 function Personal({active, setactive}:propType) {
   return (
-    <div>
+    <div className={styles.vision}>
         <h1 className={styles.Signup_heading} >Your Personal Details</h1>
         
         <span 
@@ -73,7 +73,7 @@ function Personal({active, setactive}:propType) {
 
 function Company({active, setactive}:propType) {
   return (
-    <div>
+    <div className={styles.vision}>
         <h1 className={styles.Signup_heading} >Your Company Details</h1>
         
         <span 
@@ -116,7 +116,7 @@ function Company({active, setactive}:propType) {
 
 function Request() {
   return (
-    <div>
+    <div className={styles.vision}>
         <h1 className={styles.Signup_heading} style={{width:"50vw"}}>Your Request has been Sent to the team.</h1>
         
         <span 

@@ -5,12 +5,21 @@ import { Input } from '@mantine/core';
 import img from "@assets/index.jpg"
 import {HiOutlineArrowNarrowRight} from "react-icons/hi"
 import LoginSignupLayout from "@layouts/LoginSignupLayout";
+import { useRouter } from 'next/router'
 
 export default function index() {
+  const router = useRouter()
+
   return (
    <LoginSignupLayout img={img}>
         <React.Fragment>
-        <span className={styles.Login_create_ac_btn}>Create new account</span>
+        
+        <span 
+        onClick={()=>{router.push("/Signup")}}
+        className={styles.Login_create_ac_btn}>
+          Create new account
+        </span>
+
         <h1 className={styles.Login_heading}>Sign In to your Account.</h1>
         <span className={styles.Login_sub_heading}>Enter your details</span>
 
