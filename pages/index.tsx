@@ -8,8 +8,7 @@ import LoginSignupLayout from "@layouts/LoginSignupLayout";
 
 export default function index() {
   return (
-   <LoginSignupLayout
-   img={img}>
+   <LoginSignupLayout img={img}>
         <React.Fragment>
         <span className={styles.Login_create_ac_btn}>Create new account</span>
         <h1 className={styles.Login_heading}>Sign In to your Account.</h1>
