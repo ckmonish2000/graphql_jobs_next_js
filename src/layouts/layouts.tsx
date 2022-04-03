@@ -12,7 +12,7 @@ export default function Layouts(props:prop) {
     <div className={props?.type==="login"?styles.root1:styles.root2}>
     {/* global styles */}
       <style  global>{`
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+      // @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
 
       body {
         padding:0px;

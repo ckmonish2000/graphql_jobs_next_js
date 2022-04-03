@@ -35,9 +35,9 @@ export default function index() {
           className={styles.ip_root_style}
         />
 
-        <div className={styles.forgot_password_style}>Forgot password?</div>
+        <div className={styles.forgot_password_style} suppressHydrationWarning>Forgot password?</div>
 
-      <div className={styles.Login_signup_btn}>
+      <div className={styles.Login_signup_btn} suppressHydrationWarning>
       Sign in to your account
       </div>
 
