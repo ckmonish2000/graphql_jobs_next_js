@@ -3,7 +3,12 @@ import Login_styles from "@styles/login.module.scss"
 import styles from "@styles/signup.module.scss"
 import {BsPlusLg} from "react-icons/bs"
 
-function Personal() {
+interface propType{
+  active: string,
+  setactive:(value: string) => void
+}
+
+function Personal({active, setactive}:propType) {
   return (
     <div>
         <h1 className={styles.Signup_heading} >Your Personal Details</h1>
@@ -57,7 +62,7 @@ function Personal() {
           className={styles.ip}
         />
 
-<div className={styles.Login_signup_btn} suppressHydrationWarning>
+      <div className={styles.Login_signup_btn} onClick={()=>{setactive("company")}}>
       Continue
       <BsPlusLg className={Login_styles.arrow_icon}/>
       </div>
@@ -66,7 +71,7 @@ function Personal() {
 }
 
 
-function Company() {
+function Company({active, setactive}:propType) {
   return (
     <div>
         <h1 className={styles.Signup_heading} >Your Company Details</h1>
@@ -101,7 +106,7 @@ function Company() {
           className={styles.ip}
         />
 
-<div className={styles.Login_signup_btn} suppressHydrationWarning>
+    <div className={styles.Login_signup_btn} onClick={()=>{setactive("request")}}>
       Continue
       <BsPlusLg className={Login_styles.arrow_icon}/>
       </div>

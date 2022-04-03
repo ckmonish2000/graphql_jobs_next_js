@@ -115,6 +115,7 @@
   position: absolute;
   left: 30px;
   top: 35px;
+  cursor: pointer;
 
   .icon{
     font-size: 30px;
@@ -141,5 +142,39 @@
       color: #001DFF;
       margin-bottom: 10px;
     }
+
+    .line_1{
+    border-bottom: 2px solid #001DFF;
+    position: absolute;
+    top: 4px;
+    left: 60px;
+    animation: draw 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards 
+    }
+
+    .line_2{
+    border-bottom: 2px solid #001DFF;
+    position: absolute;
+    top: 4px;
+    left: 204px;
+    animation: draw2 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards 
+    }
+  }
+}
+
+@keyframes draw{
+  0%{
+    width:10px
+  }
+  100%{
+    width: 134px;
+  }
+}
+
+@keyframes draw2{
+  0%{
+    width:10px
+  }
+  100%{
+    width: 140px;
   }
 }

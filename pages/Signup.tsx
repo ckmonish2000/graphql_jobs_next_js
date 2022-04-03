@@ -18,7 +18,11 @@ export default function Signup() {
         <BiArrowBack className={styles.icon}/>
 
       <div className={styles.signup_progress}>
+        {/* lines */}
+        {(active==="company" || active==="request") &&<div className={styles.line_1}></div>}
+        {active==="request" &&<div className={styles.line_2}></div>}
 
+        {/* balls */}
         <div className={styles.container}>
           <BsCircleFill className={styles.ball}/>
           <span>Personal</span>
@@ -38,9 +42,9 @@ export default function Signup() {
         </div>
 
         <div className={styles.signup_container}>
-        {active==="personal" && <Personal/>}
-        {active==="company" && <Company/>}
-        {active==="request" && <Request/>}
+        {active==="personal" && <Personal active={active} setactive={setactive}/>}
+        {active==="company" && <Company active={active} setactive={setactive}/>}
+        {active==="request" && <Request active={active} setactive={setactive}/>}
         </div>
       
 
