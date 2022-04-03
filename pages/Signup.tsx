@@ -10,12 +10,22 @@ import {BsCircleFill} from "react-icons/bs"
 export default function Signup() {
   const [active, setactive] = useState("personal")
 
+  const back_function = ()=>{
+    if(active === "personal") {
+
+    }else if(active === "company") {
+      setactive("personal")
+    }else if(active === "request") {
+      setactive("company")
+    }
+  }
+
   return (
    <LoginSignupLayout img={img}>
         <React.Fragment>
 
         <div className={styles.signup_progress_root}>
-        <BiArrowBack className={styles.icon}/>
+        <BiArrowBack className={styles.icon} onClick={back_function}/>
 
       <div className={styles.signup_progress}>
         {/* lines */}
