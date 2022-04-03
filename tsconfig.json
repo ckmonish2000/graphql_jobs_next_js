@@ -3,7 +3,9 @@
     "baseUrl": ".",
     "paths":{
       "@styles/*":["styles/*"],
-      "@layouts/*":["src/layouts/*"]
+      "@layouts/*":["src/layouts/*"],
+      "@assets/*":["src/assets/*"]
+
     },
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
