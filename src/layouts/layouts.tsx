@@ -1,5 +1,6 @@
 import styles from "styles/layouts.module.scss"
 import {ReactChild} from "react"
+import Logo from "@assets/Logo.png"
 
  
 interface prop{
@@ -12,15 +13,16 @@ export default function Layouts(props:prop) {
     <div className={props?.type==="login"?styles.root1:styles.root2}>
     {/* global styles */}
       <style  global>{`
-      // @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
-
       body {
         padding:0px;
         margin:0px;
         box-sizing:border-box;
-        font-family: 'Montserrat', sans-serif;
       }
     `}</style>
+      
+      <div style={{overflow: 'hidden'}}>
+        <img src={Logo.src} className={styles.Logo}/>
+      </div>
 
       {/* children */}
       {props?.children}

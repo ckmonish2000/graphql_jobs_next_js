@@ -3,15 +3,13 @@ import styles from "@styles/login.module.scss"
 import Layouts from "@layouts/layouts"
 import { Input } from '@mantine/core';
 import img from "@assets/index.jpg"
-import Logo from "@assets/Logo.png"
+import {HiOutlineArrowNarrowRight} from "react-icons/hi"
 
 export default function index() {
   return (
     <Layouts type="login">
     <React.Fragment>
-      <div style={{overflow: 'hidden'}}>
-        <img src={Logo.src} className={styles.Logo}/>
-      </div>
+      
 
       <div>
         <img alt="" src={img.src} className={styles.img_tag}/>
@@ -39,6 +37,7 @@ export default function index() {
 
       <div className={styles.Login_signup_btn} suppressHydrationWarning>
       Sign in to your account
+      <HiOutlineArrowNarrowRight className={styles.arrow_icon}/>
       </div>
 
 

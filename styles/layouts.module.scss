@@ -1,10 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
 .root1{
   display: grid;
-  grid-template-columns: 100px 350px 1fr;
+  grid-template-columns: 100px 400px 1fr;
+  font-family: Montserrat;
+
+  .Logo{
+    width: 140%;
+    position: relative;
+    right: 18px;
+  }
 }
 
 .root2{
   display: grid;
   grid-template-columns: 100px 1fr;
+  font-family: Montserrat;
+  
+  .Logo{
+    width: 140%;
+    position: relative;
+    right: 18px;
+  }
 }
 

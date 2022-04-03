@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
 .ip_root_style{
   width:50%;
   margin:20px 0px ;
@@ -39,7 +41,7 @@
   border-radius: 10px;
   height: 26px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding: 17px;
   width: 46%;
@@ -48,6 +50,13 @@
   color: #FFFFFF;
   opacity: 1;
   font: normal normal medium 19px/23px Montserrat;
+
+  .arrow_icon{
+    font-size:25pt;
+    font-weight: 500;
+    margin-right:20px;
+    opacity: 0.8;
+  }
 }
 
 .img_tag{
@@ -57,7 +66,7 @@
 
 
 .third_div{
-  width:70%;
+  width:80%;
   padding-left:100px;
 }
 
@@ -67,8 +76,3 @@
   white-space: nowrap;
 }
 
-.Logo{
-  width: 140%;
-  position: relative;
-  right: 18px;
-}
