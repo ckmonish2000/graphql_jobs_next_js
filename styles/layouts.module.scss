@@ -4,6 +4,8 @@
   display: grid;
   grid-template-columns: 100px 400px 1fr;
   font-family: Montserrat;
+  height:100vh;
+  overflow: hidden;
 
   .Logo{
     width: 140%;

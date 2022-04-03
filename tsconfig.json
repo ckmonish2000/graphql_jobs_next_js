@@ -4,7 +4,8 @@
     "paths":{
       "@styles/*":["styles/*"],
       "@layouts/*":["src/layouts/*"],
-      "@assets/*":["src/assets/*"]
+      "@assets/*":["src/assets/*"],
+      "@components/*":["src/components/*"]
 
     },
     "allowJs": true,
