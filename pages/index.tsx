@@ -14,7 +14,9 @@ export default function index() {
         <h1 className={styles.Login_heading}>Sign In to your Account.</h1>
         <span className={styles.Login_sub_heading}>Enter your details</span>
 
+
         <Input
+        style={{marginTop:"50px"}}
           placeholder="Email"
           radius="md"
           size="lg"

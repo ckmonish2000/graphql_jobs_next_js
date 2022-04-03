@@ -6,6 +6,11 @@
 
 .ip{
   margin:20px 10px;
+
+  input{
+    height:65px;
+    border: 1px solid #70707098
+  }
 }
 
 .flex{
@@ -23,7 +28,7 @@
   font: normal normal bold 54px/66px Montserrat;
   color: #383838;
   opacity: 1;
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 23px;
   margin-left:10px
 }
@@ -36,12 +41,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 17px;
+  padding: 0px 17px;
   width: 89.5%;
   margin-top: 20px;
   letter-spacing: 0px;
   color: #FFFFFF;
   margin-left: 10px;
   opacity: 1;
+  height: 65px;
   font: normal normal medium 19px/23px Montserrat;
 }

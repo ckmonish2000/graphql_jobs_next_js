@@ -11,7 +11,7 @@ function Personal() {
         <span 
         style={{marginLeft:"11px"}}
         className={Login_styles.Login_sub_heading}>
-          Fill up your company details
+          Fill up your personal details
         </span>
         
         <br/>
@@ -58,7 +58,7 @@ function Personal() {
         />
 
 <div className={styles.Login_signup_btn} suppressHydrationWarning>
-      Sign in to your account
+      Continue
       <BsPlusLg className={Login_styles.arrow_icon}/>
       </div>
     </div>
@@ -66,8 +66,78 @@ function Personal() {
 }
 
 
+function Company() {
+  return (
+    <div>
+        <h1 className={styles.Signup_heading} >Your Company Details</h1>
+        
+        <span 
+        style={{marginLeft:"11px"}}
+        className={Login_styles.Login_sub_heading}>
+          Fill up your company details
+        </span>
+        
+        <br/>
+
+
+        <Input
+          placeholder="Company name"
+          radius="md"
+          size="lg"
+          className={styles.ip}
+        />
+
+      <Input
+          placeholder="Location"
+          radius="md"
+          size="lg"
+          className={styles.ip}
+        />
+
+      <Input
+          placeholder="Website URL"
+          radius="md"
+          size="lg"
+          className={styles.ip}
+        />
+
+<div className={styles.Login_signup_btn} suppressHydrationWarning>
+      Continue
+      <BsPlusLg className={Login_styles.arrow_icon}/>
+      </div>
+    </div>
+  )
+}
+
+function Request() {
+  return (
+    <div>
+        <h1 className={styles.Signup_heading} style={{width:"50vw"}}>Your Request has been Sent to the team.</h1>
+        
+        <span 
+        style={{marginLeft:"11px",whiteSpace:"nowrap"}}
+        className={Login_styles.Login_sub_heading}>
+          You will be notified once the company approves your account.
+        </span>
+        
+        <br/>
+
+
+        
+
+      <div 
+      style={{marginTop:"64px"}}
+      className={styles.Login_signup_btn}>
+      Continue
+      <BsPlusLg className={Login_styles.arrow_icon}/>
+      </div>
+    </div>
+  )
+}
 
 
 export {
-  Personal
+  Personal,
+  Company,
+  Request
 }

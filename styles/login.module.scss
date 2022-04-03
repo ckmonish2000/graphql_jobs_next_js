@@ -3,6 +3,11 @@
 .ip_root_style{
   width:50%;
   margin:20px 0px ;
+
+  input{
+    height:65px;
+    border: 1px solid #70707098
+  }
 }
 
 .Login_heading{
@@ -10,7 +15,7 @@
   font: normal normal bold 54px/66px Montserrat;
   color: #383838;
   opacity: 1;
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 23px;
 }
 
@@ -37,19 +42,34 @@
 
 
 .Login_signup_btn{
+  // background: #001DFF 0% 0% no-repeat padding-box;
+  // border-radius: 10px;
+  // height: 26px;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  // padding: 17px;
+  // letter-spacing: 0px;
+  // color: #FFFFFF;
+  // opacity: 1;
+  // font: normal normal medium 19px/23px Montserrat;
+  
   background: #001DFF 0% 0% no-repeat padding-box;
   border-radius: 10px;
   height: 26px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 17px;
+  padding: 0px 17px;
   width: 46%;
-  margin-top: 95px;
+  margin-top: 20px;
   letter-spacing: 0px;
   color: #FFFFFF;
-  opacity: 1;
-  font: normal normal medium 19px/23px Montserrat;
+  margin-top: 95px;
+    // margin-left: 10px;
+    opacity: 1;
+    height: 65px;
+    font: normal normal medium 19px/23px Montserrat;
 
   .arrow_icon{
     font-size:25pt;
