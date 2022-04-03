@@ -4,17 +4,13 @@ import Layouts from "@layouts/layouts"
 import { Input } from '@mantine/core';
 import img from "@assets/index.jpg"
 import {HiOutlineArrowNarrowRight} from "react-icons/hi"
+import LoginSignupLayout from "@layouts/LoginSignupLayout";
 
 export default function index() {
   return (
-    <Layouts type="login">
-    <React.Fragment>
-      
-
-      <div>
-        <img alt="" src={img.src} className={styles.img_tag}/>
-      </div>
-      <div className={styles.third_div}>
+   <LoginSignupLayout
+   img={img}>
+        <React.Fragment>
         <span className={styles.Login_create_ac_btn}>Create new account</span>
         <h1 className={styles.Login_heading}>Sign In to your Account.</h1>
         <span className={styles.Login_sub_heading}>Enter your details</span>
@@ -41,8 +37,7 @@ export default function index() {
       </div>
 
 
-      </div>
       </React.Fragment>
-    </Layouts>
+     </LoginSignupLayout>
   )
 }
