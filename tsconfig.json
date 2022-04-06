@@ -5,7 +5,8 @@
       "@styles/*":["styles/*"],
       "@layouts/*":["src/layouts/*"],
       "@assets/*":["src/assets/*"],
-      "@components/*":["src/components/*"]
+      "@components/*":["src/components/*"],
+      "@contexts/*":["src/contexts/*"],
 
     },
     "allowJs": true,
