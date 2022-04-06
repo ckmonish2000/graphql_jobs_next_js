@@ -1,0 +1,37 @@
+@import "./login.module.scss";
+@import "./functions.module.scss";
+
+.Nav_root{
+  @include flex(column,center,center);
+  position: relative;
+  box-shadow: 0px 3px 4px #00000029;
+  overflow: hidden;
+
+
+  // custom logo for navbar component
+  .Logo{
+    right:0px;
+    margin-bottom: 25px;
+  }
+
+  .icons{
+    font-size:45px;
+    color:#BFBFBF;
+    margin-bottom:35px;
+    cursor:pointer;
+
+    &:hover{
+      color:rgba(36,36,36)
+    }
+  }
+
+  .icons2{
+    @extend .icons;
+    font-size:40px;
+  }
+
+  .icons_n{
+    @extend .icons;
+    color:#383838
+  }
+}
