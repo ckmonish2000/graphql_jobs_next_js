@@ -64,7 +64,7 @@ export default function Navbar() {
 
       {/* Groups */}
       <Wrapper>
-      <MdGroups className={styles.icons_n}/>
+      <MdGroups className={styles.icons2}/>
       </Wrapper>
 
 
