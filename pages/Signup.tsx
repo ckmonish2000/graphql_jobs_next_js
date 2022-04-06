@@ -54,7 +54,10 @@ export default function Signup() {
         <div className={styles.signup_container}>
         {active==="personal" && <Personal active={active} setactive={setactive}/>}
         {active==="company" && <Company active={active} setactive={setactive}/>}
-        {active==="request" && <Request active={active} setactive={setactive}/>}
+        {active==="request" && <Request 
+        // active={active} 
+        // setactive={setactive}
+        />}
         </div>
       
 
