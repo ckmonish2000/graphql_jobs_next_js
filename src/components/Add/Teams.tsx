@@ -51,8 +51,8 @@ export default function Teams() {
     <InputWrapper
     width="80%"
     className=''
-    text='Add Project Name'
-    placeholder='Company name'
+    text='Assigned to'
+    placeholder='Anway'
     styles={{width:"97%"}}
     onChange={()=>{}}
     />
