@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import InputWrapper from '@components/wrappers/InputWrapper'
 import SelectWrapper from "@components/wrappers/SelectWrapper"
 import styles from "@styles/AddClients.module.scss"
+import TeamsWrapper from '@components/wrappers/TeamsWrapper'
 
 
 
@@ -41,7 +42,17 @@ export default function Teams() {
     onChange={()=>{}}
     />
 
+    
 
+    <TeamsWrapper
+    width="20%"
+    text='Assigned to'
+    placeholder='Anway'
+    className={styles.team_wrapper}
+    styles={{}}
+    onChange={()=>{}}
+    list={["","","","",""]}
+    />
     
     <InputWrapper
     width="80%"
