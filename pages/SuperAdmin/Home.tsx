@@ -14,7 +14,7 @@ export default function AddClients() {
     children={
      <React.Fragment>
     
-    <h1 className={styles.Add_clients_Heading}>Add Clients</h1>
+    <h1 className={styles.Add_clients_Heading}>Add {selected_switch==="clients"?"Clients":"Team"}</h1>
 
     {/* selecters */}
     <div className={styles.root_selector_container}>
