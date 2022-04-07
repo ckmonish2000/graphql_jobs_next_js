@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import styles from "@styles/AddClients.module.scss"
 import Clients from '@components/Add/clients'
 import GeneralLayout from '@layouts/GeneralLayout'
+import Teams from '@components/Add/Teams'
 
 
 // add clients imports
@@ -33,6 +34,8 @@ export default function AddClients() {
     </div>
 
        {selected_switch === "clients" && <Clients/>}
+       {selected_switch === "teams" && <Teams/>}
+       
      </React.Fragment>
     }
     />

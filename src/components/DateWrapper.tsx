@@ -1,18 +1,17 @@
 import React from 'react'
-import { Input, Select } from '@mantine/core';
 import style from "@styles/login.module.scss"
 import { DatePicker } from '@mantine/dates'
 
-interface InputWrapperType{
+interface DateWrapperType{
   text:string,
   placeholder:string,
   className:string,
   styles:React.CSSProperties,
-  onChange:(val:React.ChangeEvent) => void,
-  width:string
+  onChange:any,
+  width:string,
 }
 
-export default function InputWrapper({width="100%",text="",placeholder="",className="",styles={},onChange=()=>{}}:InputWrapperType) {
+export default function DateWrapper({width="100%",text="",placeholder="",className="",styles={},onChange=()=>{}}:DateWrapperType) {
   return (
     <div style={{width: width}}>
 
@@ -27,18 +26,13 @@ export default function InputWrapper({width="100%",text="",placeholder="",classN
       }}
       >{text}</div>}
 
-      <Input
-          style={{height:"55px",margin:"0px",...styles}}
-          placeholder={placeholder}
-          radius="md"
-          size="lg"
-          className={style.ip_root_style}
-          onChange={onChange}
+        <DatePicker
+        radius="md"
+        size="lg"
+        className={style.ip_root_style}
+        style={{height:"55px",margin:"0px",...styles}}
+        onChange={onChange}
         />
     </div>
   )
 }
-
-
-
-

@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
-import InputWrapper, { DateWrapper } from '@components/InputWrapper'
+import InputWrapper from '@components/InputWrapper'
+import DateWrapper from "@components/DateWrapper"
 import { Button,Checkbox, Select } from '@mantine/core'
 import styles from "@styles/AddClients.module.scss"
 import AddDetailsCompo from './AddDetailsCompo'
