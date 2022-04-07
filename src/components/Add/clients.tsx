@@ -1,7 +1,8 @@
-import React from 'react'
+import React,{useState} from 'react'
 import InputWrapper from '@components/InputWrapper'
 import { Button } from '@mantine/core'
 import styles from "@styles/AddClients.module.scss"
+import AddDetailsCompo from './AddDetailsCompo'
 
 interface clientsProps{
   selected_switch: string,
@@ -9,9 +10,19 @@ interface clientsProps{
 }
 
 export default function Clients() {
+  const [contactDetails, setcontactDetails] = useState([{}])
+
+  const AddNewField =()=>{
+    const val = [...contactDetails]
+    val.push({})
+    console.log(val)
+    setcontactDetails(val)
+  }
+
+  console.log(contactDetails)
   return (
     <React.Fragment>
-      
+
     {/* input section */}
     <div className={styles.Add_clients_ip_container}>
     <InputWrapper
@@ -26,34 +37,14 @@ export default function Clients() {
     <Button className={styles.upload_btn}>Upload Logo</Button>
     </div>
 
-    <div className={styles.Add_clients_ip_container_2}>
-    <InputWrapper
-    width="80%"
-    className=''
-    text='Contact Number'
-    placeholder=''
-    styles={{width:"75%"}}
-    onChange={()=>{}}
-    />
-
-    <InputWrapper
-    width="80%"
-    className=''
-    text='Contact Person'
-    placeholder='Contact person name'
-    styles={{width:"75%"}}
-    onChange={()=>{}}
-    />
-
-    <InputWrapper
-    width="96.2%"
-    className=''
-    text='Email'
-    placeholder='name@companydomain.com'
-    styles={{width:"95.2%"}}
-    onChange={()=>{}}
-    />
-    </div>
+    {contactDetails?.map(v=><AddDetailsCompo key={Math.random()}/>)}
+    
+    <Button 
+    style={{width:"100%"}}
+    onClick={AddNewField}
+    className={styles.upload_btn}>
+    Add more contacts
+    </Button>
     </React.Fragment>
   )
 }
