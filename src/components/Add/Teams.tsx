@@ -1,8 +1,7 @@
 import React,{useState} from 'react'
-import InputWrapper from '@components/InputWrapper'
-import SelectWrapper from "@components/SelectWrapper"
+import InputWrapper from '@components/wrappers/InputWrapper'
+import SelectWrapper from "@components/wrappers/SelectWrapper"
 import styles from "@styles/AddClients.module.scss"
-import TeamsIconMap from '@components/TeamsIconMap'
 
 
 
@@ -43,7 +42,7 @@ export default function Teams() {
     />
 
 
-    <TeamsIconMap list={["","","","","","",""]}/>
+    
     <InputWrapper
     width="80%"
     className=''

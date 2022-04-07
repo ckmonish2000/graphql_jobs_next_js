@@ -1,4 +1,4 @@
-import InputWrapper from '@components/InputWrapper'
+import InputWrapper from '@components/wrappers/InputWrapper'
 import styles from "@styles/AddClients.module.scss"
 
 export default function AddDetailsCompo() {
