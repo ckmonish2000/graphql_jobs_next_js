@@ -40,11 +40,12 @@ export default function Clients() {
     {contactDetails?.map(v=><AddDetailsCompo key={Math.random()}/>)}
     
     <Button 
-    style={{width:"100%"}}
+    style={{width:"99%",top:"5px",marginLeft:"18.5px"}}
     onClick={AddNewField}
     className={styles.upload_btn}>
     Add more contacts
     </Button>
+
     </React.Fragment>
   )
 }
