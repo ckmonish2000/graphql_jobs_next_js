@@ -2,17 +2,11 @@ import React,{useState} from 'react'
 import InputWrapper from '@components/InputWrapper'
 import SelectWrapper from "@components/SelectWrapper"
 import styles from "@styles/AddClients.module.scss"
+import TeamsIconMap from '@components/TeamsIconMap'
+
 
 
 export default function Teams() {
-  const [contactDetails, setcontactDetails] = useState([{}])
-
-  const AddNewField =()=>{
-    const val = [...contactDetails]
-    val.push({})
-    console.log(val)
-    setcontactDetails(val)
-  }
 
   return (
     <React.Fragment>
@@ -48,6 +42,8 @@ export default function Teams() {
     onChange={()=>{}}
     />
 
+
+    <TeamsIconMap list={["","","","","","",""]}/>
     <InputWrapper
     width="80%"
     className=''
