@@ -64,3 +64,12 @@
   top: 24px;
   right: 20px;
 }
+
+.checkBox_container{
+  @include flex(column,flex-start,center);
+  width: 20%;
+  position: relative;
+  top: 25px;
+  white-space: nowrap;  
+  margin-right: 50px;
+}

@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
-import InputWrapper from '@components/InputWrapper'
-import { Button } from '@mantine/core'
+import InputWrapper, { DateWrapper } from '@components/InputWrapper'
+import { Button,Checkbox, Select } from '@mantine/core'
 import styles from "@styles/AddClients.module.scss"
 import AddDetailsCompo from './AddDetailsCompo'
 
@@ -19,7 +19,6 @@ export default function Clients() {
     setcontactDetails(val)
   }
 
-  console.log(contactDetails)
   return (
     <React.Fragment>
 
@@ -45,6 +44,72 @@ export default function Clients() {
     className={styles.upload_btn}>
     Add more contacts
     </Button>
+
+    <br/>
+
+    <div className={styles.Add_clients_ip_container_2}>
+    <InputWrapper
+    width="80%"
+    className=''
+    text='Budget'
+    placeholder=''
+    styles={{width:"75%"}}
+    onChange={()=>{}}
+    />
+
+    <InputWrapper
+    width="80%"
+    className=''
+    text='Project'
+    placeholder=''
+    styles={{width:"75%"}}
+    onChange={()=>{}}
+    />
+
+
+    <div className={styles.checkBox_container}>
+    <Checkbox
+      label="One Time Project"
+      color="dark"
+      style={{marginBottom:"10px"}}
+    />
+    <Checkbox
+      label="Retainer"
+      color="dark"
+    />
+    </div>
+
+    <DateWrapper
+     width="80%"
+     className=''
+     text='Signup Date'
+     placeholder=''
+     styles={{width:"90%"}}
+     onChange={()=>{}}
+    />
+
+    <DateWrapper
+     width="80%"
+     className=''
+     text='Close Date'
+     placeholder=''
+     styles={{width:"94%"}}
+     onChange={()=>{}}
+    />
+    {/* <Select
+    style={{width:"100%"}}
+      placeholder="Pick one"
+      radius="md"
+      size="lg"
+      data={[
+        { value: 'react', label: 'React' },
+        { value: 'ng', label: 'Angular' },
+        { value: 'svelte', label: 'Svelte' },
+        { value: 'vue', label: 'Vue' },
+      ]}
+    /> */}
+
+    </div>
 
     </React.Fragment>
   )
