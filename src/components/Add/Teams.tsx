@@ -3,6 +3,7 @@ import InputWrapper from '@components/wrappers/InputWrapper'
 import SelectWrapper from "@components/wrappers/SelectWrapper"
 import styles from "@styles/AddClients.module.scss"
 import TeamsWrapper from '@components/wrappers/TeamsWrapper'
+import {Button} from "@mantine/core"
 
 
 
@@ -49,7 +50,7 @@ export default function Teams() {
     text='Assigned to'
     placeholder='Anway'
     className={styles.team_wrapper}
-    styles={{}}
+    styles={{marginTop:"20px"}}
     onChange={()=>{}}
     list={["","","","",""]}
     />
@@ -62,6 +63,29 @@ export default function Teams() {
     styles={{width:"97%"}}
     onChange={()=>{}}
     />
+   </div>
+
+
+   <Button 
+    style={{width:"99%",top:"5px",marginLeft:"18.5px",marginTop:"30px"}}
+    // onClick={AddNewField}
+    className={styles.upload_btn}>
+    Add more team mates
+    </Button>
+
+    <div className={styles.flex}>
+    <Button 
+    style={{width:"99%",top:"5px",marginLeft:"18.5px",marginTop:"25px",height:"55px",background:"#001DFF"}}
+    className={styles.upload_btn}>
+    Edit
+    </Button>
+
+    <Button 
+    style={{width:"99%",top:"5px",marginLeft:"18.5px",marginTop:"25px",height:"55px"}}
+    className={styles.upload_btn}>
+    Save
+    </Button>
+
     </div>
 
     </React.Fragment>

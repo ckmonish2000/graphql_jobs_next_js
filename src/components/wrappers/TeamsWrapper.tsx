@@ -1,7 +1,8 @@
 import React from 'react'
-import style from "@styles/login.module.scss"
+import style from "@styles/AddClients.module.scss"
 import { DatePicker } from '@mantine/dates'
 import TeamsIconMap from '@components/TeamsIconMap'
+import {IoAddOutline} from "react-icons/io5"
 
 interface DateWrapperType{
   text:string,
@@ -33,7 +34,13 @@ export default function TeamsWrapper({list=[""],width="100%",text="",placeholder
       style={{
         ...styles
       }}>
+       
        <TeamsIconMap list={list}/>
+
+      <span className={style.add_icon_box}>
+      <IoAddOutline/>
+      </span>
+
        </div>
     </div>
   )
