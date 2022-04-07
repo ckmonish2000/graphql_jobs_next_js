@@ -36,6 +36,7 @@ export default function index() {
           placeholder="Password"
           radius="md"
           size="lg"
+          type='password'
           className={styles.ip_root_style}
         />
 

@@ -1,4 +1,6 @@
+import InputWrapper from '@components/InputWrapper'
 import GeneralLayout from '@layouts/GeneralLayout'
+import { Button } from '@mantine/core'
 
 // add clients imports
 import styles from "@styles/AddClients.module.scss"
@@ -27,7 +29,20 @@ export default function AddClients() {
       className={selected_switch==="teams" ?styles.switch_btns_active:styles.switch_btns_deactive}>
       Teams
       </div>
-       
+      </div>
+
+      {/* input section */}
+      <div className={styles.Add_clients_ip_container}>
+      <InputWrapper
+      width="80%"
+      className=''
+      text='Client Name'
+      placeholder='Company name'
+      styles={{width:"70%"}}
+      onChange={()=>{}}
+      />
+
+      <Button className={styles.upload_btn}>Upload Logo</Button>
       </div>
 
       </React.Fragment>

@@ -1,3 +1,5 @@
+@import "./login.module.scss";
+
 .Add_clients_Heading{
   text-align: left;
   font: normal normal bold 44px/66px Montserrat;
@@ -5,6 +7,14 @@
   color: #383838;
   opacity: 1;
   margin-top: 15px;
+}
+
+.root_selector_container{
+  display:flex;
+  width: 100%;
+  border-bottom: 4px solid #F0F0F0;
+  position: relative;
+  margin-bottom: 50px;
 }
 
 .switch_btns_active{
@@ -32,9 +42,20 @@
     cursor: pointer;
 }
 
-.root_selector_container{
-  display:flex;
-  width: 100%;
-  border-bottom: 4px solid #F0F0F0;
+.Add_clients_ip_container{
+  @import "./functions.module.scss";
+  @include flex(row,center,space-between);
+}
+
+.upload_btn{
+  font: normal normal bold 15px/23px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  background: #383838 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  width: 35%;
+  height: 70px;
   position: relative;
+  top: 24px;
+  right: 20px;
 }
