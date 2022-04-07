@@ -10,7 +10,7 @@ export default function GeneralLayout({children}:any) {
       {/* <div>ksdjshhuh</div> */}
     <Navbar/>
 
-      <div className={styles.third_div}>
+      <div className={styles.second_div}>
       {children}
       </div>
       </React.Fragment>

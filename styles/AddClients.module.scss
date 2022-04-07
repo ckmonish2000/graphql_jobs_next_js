@@ -1,0 +1,40 @@
+.Add_clients_Heading{
+  text-align: left;
+  font: normal normal bold 44px/66px Montserrat;
+  letter-spacing: 0px;
+  color: #383838;
+  opacity: 1;
+  margin-top: 15px;
+}
+
+.switch_btns_active{
+  font: normal normal bold 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #383838;
+    opacity: 1;
+    padding: 10px 100px;
+    text-align: center;
+    position: relative;
+    top: 4px;
+    border-bottom: 4px solid #383838;
+}
+
+
+.switch_btns_deactive{
+  font: normal normal bold 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #BFBFBF;
+    opacity: 1;
+    padding: 10px 100px;
+    text-align: center;
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+}
+
+.root_selector_container{
+  display:flex;
+  width: 100%;
+  border-bottom: 4px solid #F0F0F0;
+  position: relative;
+}

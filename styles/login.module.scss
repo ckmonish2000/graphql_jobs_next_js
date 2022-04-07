@@ -41,19 +41,7 @@
 }
 
 
-.Login_signup_btn{
-  // background: #001DFF 0% 0% no-repeat padding-box;
-  // border-radius: 10px;
-  // height: 26px;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // padding: 17px;
-  // letter-spacing: 0px;
-  // color: #FFFFFF;
-  // opacity: 1;
-  // font: normal normal medium 19px/23px Montserrat;
-  
+.Login_signup_btn{  
   background: #001DFF 0% 0% no-repeat padding-box;
   border-radius: 10px;
   height: 26px;
@@ -89,6 +77,10 @@
   width:80%;
   padding-left:100px;
   position: relative;
+}
+
+.second_div{
+  padding: 10px 60px;
 }
 
 .forgot_password_style{
