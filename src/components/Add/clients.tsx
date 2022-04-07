@@ -11,10 +11,7 @@ interface clientsProps{
 export default function Clients() {
   return (
     <React.Fragment>
-    <h1 className={styles.Add_clients_Heading}>AddClients</h1>
-
-    
-
+      
     {/* input section */}
     <div className={styles.Add_clients_ip_container}>
     <InputWrapper

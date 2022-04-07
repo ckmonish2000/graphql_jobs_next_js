@@ -13,7 +13,10 @@ export default function AddClients() {
     <GeneralLayout
     children={
      <React.Fragment>
-       {/* selecters */}
+    
+    <h1 className={styles.Add_clients_Heading}>Add Clients</h1>
+
+    {/* selecters */}
     <div className={styles.root_selector_container}>
     
     <div 
@@ -29,7 +32,7 @@ export default function AddClients() {
     </div>
     </div>
 
-       {selected_switch === "clients" && <Clients selected_switch={selected_switch} setselected_switch={setselected_switch}/>}
+       {selected_switch === "clients" && <Clients/>}
      </React.Fragment>
     }
     />
