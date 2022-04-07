@@ -52,6 +52,19 @@
   margin: 42px 0px;
 }
 
+.Add_clients_ip_container_2_1{
+  margin: 42px 0px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.Add_clients_ip_container_2_2{
+  // @include flex(row,center,flex-start);
+  margin: 42px 0px;
+  display: grid;
+  grid-template-columns: 40% 20% 20% 20%;
+}
+
 .upload_btn{
   font: normal normal bold 15px/23px Montserrat;
   letter-spacing: 0px;
@@ -72,4 +85,12 @@
   top: 25px;
   white-space: nowrap;  
   margin-right: 50px;
+}
+
+.hr_divider{
+  background: #707070;
+  height: 2px;
+  opacity: 0.2;
+  position: relative;
+  left: -6px;
 }

@@ -47,13 +47,14 @@ export default function Clients() {
 
     <br/>
 
-    <div className={styles.Add_clients_ip_container_2}>
+    {/* first budget part */}
+    <div className={styles.Add_clients_ip_container_2_1}>
     <InputWrapper
     width="80%"
     className=''
     text='Budget'
     placeholder=''
-    styles={{width:"75%"}}
+    styles={{width:"100%"}}
     onChange={()=>{}}
     />
 
@@ -62,7 +63,7 @@ export default function Clients() {
     className=''
     text='Project'
     placeholder=''
-    styles={{width:"75%"}}
+    styles={{width:"80%"}}
     onChange={()=>{}}
     />
 
@@ -96,19 +97,52 @@ export default function Clients() {
      styles={{width:"94%"}}
      onChange={()=>{}}
     />
-    {/* <Select
-    style={{width:"100%"}}
-      placeholder="Pick one"
-      radius="md"
-      size="lg"
-      data={[
-        { value: 'react', label: 'React' },
-        { value: 'ng', label: 'Angular' },
-        { value: 'svelte', label: 'Svelte' },
-        { value: 'vue', label: 'Vue' },
-      ]}
-    /> */}
+    </div>
 
+    
+    <hr className={styles.hr_divider}/>
+
+    {/* second budget part */}
+    <div className={styles.Add_clients_ip_container_2_2} style={{marginTop:"20px"}}>
+    <InputWrapper
+    width="80%"
+    className=''
+    text='Budget'
+    placeholder=''
+    styles={{width:"102%"}}
+    onChange={()=>{}}
+    />
+
+
+    <div className={styles.checkBox_container}>
+    <Checkbox
+      label="One Time Project"
+      color="dark"
+      style={{marginBottom:"10px"}}
+    />
+    <Checkbox
+      label="Retainer"
+      color="dark"
+    />
+    </div>
+
+    <DateWrapper
+     width="80%"
+     className=''
+     text='Signup Date'
+     placeholder=''
+     styles={{width:"90%"}}
+     onChange={()=>{}}
+    />
+
+    <DateWrapper
+     width="80%"
+     className=''
+     text='Close Date'
+     placeholder=''
+     styles={{width:"97.5%"}}
+     onChange={()=>{}}
+    />
     </div>
 
     </React.Fragment>
