@@ -20,10 +20,19 @@ export default function Application({Component,pageProps}:AppProps) {
     body["style"]["boxSizing"] = "border-box"
   }
   }, [])
+
+  const client = new ApolloClient({
+    uri: 'https://api.graphql.jobs/',
+    cache: new InMemoryCache()
+  });
   
   return (
+  <ApolloProvider client={client}>
+  {/* user contexts */}
   <RootContextProvider>
+  {/* component logic */}
   <Component {...pageProps}/>
   </RootContextProvider>
+  </ApolloProvider>
   )
 }
