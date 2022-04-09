@@ -1,5 +1,10 @@
+import RootContextProvider from "@contexts/RootContext"
 import {AppProps} from "next/app"
 
 export default function Application({Component,pageProps}:AppProps) {
-  return (<Component {...pageProps}/>)
+  return (
+  <RootContextProvider>
+  <Component {...pageProps}/>
+  </RootContextProvider>
+  )
 }
