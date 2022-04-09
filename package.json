@@ -7,6 +7,7 @@
     "dev": "next"
   },
   "dependencies": {
+    "@apollo/client": "^3.5.10",
     "@mantine/core": "^4.1.1",
     "@mantine/dates": "^4.1.2",
     "@mantine/hooks": "^4.1.1",
@@ -15,6 +16,7 @@
     "@types/react": "^17.0.43",
     "@zeit/next-sass": "^1.0.1",
     "dayjs": "^1.11.0",
+    "graphql": "^16.3.0",
     "next": "^12.1.4",
     "node-sass": "^7.0.1",
     "react": "^18.0.0",

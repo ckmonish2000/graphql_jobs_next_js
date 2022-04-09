@@ -9,15 +9,6 @@ interface prop{
 export default function Layouts(props:prop) {
   return (
     <div className={props?.type==="login"?styles.root1:styles.root2}>
-    {/* global styles */}
-      <style  global>{`
-      body {
-        padding:0px;
-        margin:0px;
-        box-sizing:border-box;
-      }
-    `}</style>
-
       {/* children */}
       {props?.children}
     </div>
