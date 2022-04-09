@@ -8,6 +8,7 @@ import {
   gql
 } from "@apollo/client";
 import RootContextProvider from "@contexts/RootContext"
+import "@styles/global.css"
 
 
 export default function Application({Component,pageProps}:AppProps) {
